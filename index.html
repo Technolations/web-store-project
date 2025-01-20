@@ -1,0 +1,140 @@
+<!-- Main store front page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta tags for responsiveness and character encoding -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Store Front Page</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <!-- Navigation and Header -->
+  <header>
+    <h1>Welcome to Our Store</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="clothes.html">Clothes</a></li>
+        <li><a href="accessories.html">Accessories</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <!-- Shopping Cart Components -->
+  <!-- Floating cart icon with item count -->
+  <div class="cart-icon" data-count="0">
+    <i class="fas fa-shopping-cart"></i>
+  </div>
+  
+  <!-- Cart popup with items list -->
+  <div class="cart-popup">
+    <!-- Dynamically populated by cart.js -->
+    <ul id="cart-items"></ul>
+  </div>
+  
+  <!-- Main Content -->
+  <main>
+    <!-- Store introduction -->
+    <div class="container">
+      <section id="home">
+        <h2>About Our Store</h2>
+        <p>Welcome to our online store! We offer a wide range of products including clothes and accessories. Browse through our collections and find the perfect items for you.</p>
+        <div class="sections">
+          <a href="clothes.html" class="button">Clothes</a>
+          <a href="accessories.html" class="button">Accessories</a>
+          <a href="contact.html" class="button">Contact Us</a>
+        </div>
+      </section>
+      
+      <!-- Product grid with add to cart functionality -->
+      <section id="featured-products">
+        <h2>Featured Products</h2>
+        <p>Check out our latest collections!</p>
+        <div class="products-grid">
+          <div class="product">
+            <div class="product-image-container">
+              <img src="images/shirt.jpg" alt="Featured Shirt" onerror="this.src='#'">
+            </div>
+            <div class="product-content">
+              <h2>Featured Shirt</h2>
+              <p>Our most popular shirt design.</p>
+              <p class="price">$29.99</p>
+              <div class="product-buttons">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-image-container">
+              <img src="images/accessory1.jpg" alt="Featured Accessory" onerror="this.src='#'">
+            </div>
+            <div class="product-content">
+              <h2>Featured Accessory</h2>
+              <p>Must-have accessory of the season.</p>
+              <p class="price">$19.99</p>
+              <div class="product-buttons">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    
+    <!-- Project information section -->
+    <div class="container">
+      <section id="project-info">
+        <h2>Project Information</h2>
+        <div class="project-info">
+          <h3>Overview</h3>
+          <p>A modern, responsive e-commerce website built with vanilla JavaScript, HTML5, and CSS3. The project demonstrates a clean, modular architecture with a focus on performance and user experience.</p>
+          
+          <h3>Key Features</h3>
+          <ul>
+            <li>Responsive design that works across all devices</li>
+            <li>Shopping cart with persistent storage</li>
+            <li>Dynamic product grid layout</li>
+            <li>Real-time cart updates with animations</li>
+            <li>Form handling with validation</li>
+            <li>Image error handling with fallbacks</li>
+            <li>Performance optimizations (will-change, transform3d, etc.)</li>
+            <li>Accessibility considerations</li>
+          </ul>
+
+          <h3>Technical Stack</h3>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3 (with modern features like CSS Grid, Flexbox, CSS Variables)</li>
+            <li>Vanilla JavaScript (ES6+)</li>
+            <li>Local Storage for cart persistence</li>
+            <li>Font Awesome for icons</li>
+            <li>Google Fonts (Poppins, Inter, Roboto)</li>
+          </ul>
+
+          <h3>Contributors</h3>
+          <ul>
+            <li>Eni Nuhaj (Group Leader)</li>
+            <li>Enea Guzina</li>
+            <li>Erdi Ceni</li>
+            <li>Evi Kongoli</li>
+            <li>Luis Mezini</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </main>
+  
+  <!-- Scripts for cart and main functionality -->
+  <footer>
+    <p>Sisteme Multimediale Bachelor Informatike - Klasa A2 2023-2024</p>
+  </footer>
+  <script src="scripts/cart.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+</html>

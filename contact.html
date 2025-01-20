@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <h1>Contact Us</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="clothes.html">Clothes</a></li>
+        <li><a href="accessories.html">Accessories</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Replace emoji cart icon with Font Awesome icon -->
+  <div class="cart-icon" data-count="0">
+    <i class="fas fa-shopping-cart"></i>
+  </div>
+  <div class="cart-popup">
+    <ul id="cart-items"></ul>
+  </div>
+
+  <main>
+    <section>
+      <h2>Get in Touch</h2>
+      <p>If you have any questions or inquiries, feel free to reach out to us!</p>
+      <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Your Name">
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Your Email">
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required placeholder="Your Message"></textarea>
+        
+        <button type="submit">Send Message</button>
+      </form>
+
+      <div class="contact-info">
+        <h3>Contact Information</h3>
+        <div class="contact-grid">
+            <div class="contact-item">
+                <i class="fas fa-users"></i>
+                <h4>Project Members</h4>
+                <p>Eni Nuhaj (Group Leader)<br>
+                   Enea Guzina<br>
+                   Erdi Ceni<br>
+                   Evi Kongoli<br>
+                   Luis Mezini</p>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <h4>Phone</h4>
+                <p><a href="tel:+355683913110">+355 68 391 3110</a></p>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <h4>Email</h4>
+                <p><a href="mailto:eni.nuhaj@icloud.com">eni.nuhaj@icloud.com</a></p>
+            </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>Sisteme Multimediale Bachelor Informatike - Klasa A2 2023-2024</p>
+  </footer>
+  <script src="scripts/cart.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clothes - Our Store</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <h1>Clothing Collection</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="clothes.html">Clothes</a></li>
+        <li><a href="accessories.html">Accessories</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="cart-icon" data-count="0">
+    <i class="fas fa-shopping-cart"></i>
+  </div>
+  <div class="cart-popup">
+    <ul id="cart-items"></ul>
+  </div>
+
+  <!-- Add checkout container -->
+  <div class="checkout-container">
+    <div class="checkout-widget">
+      <!-- Content will be dynamically inserted by checkout.js -->
+    </div>
+  </div>
+
+  <main>
+    <div class="container">
+      <div class="products-grid">
+        <div class="product">
+          <div class="product-image-container">
+            <img src="images/shirt.jpg" alt="Stylish Shirt" onerror="this.src='#'">
+          </div>
+          <div class="product-content">
+            <h2>Stylish Shirt</h2>
+            <p>This stylish shirt is perfect for any occasion. Made from high-quality fabric.</p>
+            <p class="price">$29.99</p>
+            <div class="product-buttons">
+              <button class="add-to-cart">Add to Cart</button>
+              <button class="buy-now">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image-container">
+            <img src="images/pants.jpg" alt="Comfortable Pants" onerror="this.src='#'">
+          </div>
+          <div class="product-content">
+            <h2>Comfortable Pants</h2>
+            <p>These comfortable pants are great for casual wear. Available in various sizes.</p>
+            <p class="price">$39.99</p>
+            <div class="product-buttons">
+              <button class="add-to-cart">Add to Cart</button>
+              <button class="buy-now">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image-container">
+            <img src="images/jacket.jpg" alt="Trendy Jacket" onerror="this.src='#'">
+          </div>
+          <div class="product-content">
+            <h2>Trendy Jacket</h2>
+            <p>This trendy jacket will keep you warm and stylish during the colder months.</p>
+            <p class="price">$59.99</p>
+            <div class="product-buttons">
+              <button class="add-to-cart">Add to Cart</button>
+              <button class="buy-now">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image-container">
+            <img src="images/hat.jpg" alt="Cool Hat" onerror="this.src='#'">
+          </div>
+          <div class="product-content">
+            <h2>Cool Hat</h2>
+            <p>Perfect accessory for sunny days.</p>
+            <p class="price">$19.99</p>
+            <div class="product-buttons">
+              <button class="add-to-cart">Add to Cart</button>
+              <button class="buy-now">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>Sisteme Multimediale Bachelor Informatike - Klasa A2 2023-2024</p>
+  </footer>
+  <script src="scripts/cart.js"></script>
+  <script src="scripts/checkout.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+</html>
