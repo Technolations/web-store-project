@@ -11,6 +11,7 @@ Welcome to the **Web Store Project**! This project is a simple yet elegant onlin
 
 ## 📂 Project Structure
 
+```plaintext
 web-store-project/
 ├── src/
 │   ├── accessories.html
